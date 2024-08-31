@@ -1,6 +1,5 @@
 {% set version = '0.6.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-fusen
@@ -13,8 +12,7 @@ source:
   sha256: 774e10f06429a27f26fa79b42597a7d52b28ec239c074b81e19c1bb10e93f434
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
