@@ -1,4 +1,4 @@
-{% set version = '0.6.0' %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fusen_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fusen/fusen_{{ version }}.tar.gz
-  sha256: 774e10f06429a27f26fa79b42597a7d52b28ec239c074b81e19c1bb10e93f434
+  sha256: 14cafd634dbc6cd31b096c82e197e9263c3c0c0ee4ea19205af9c8722f185b5a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -64,11 +64,8 @@ about:
   home: https://thinkr-open.github.io/fusen/
   dev_url: https://github.com/Thinkr-open/fusen
   license: MIT
-  summary: Use Rmarkdown First method to build your package. Start your package with documentation,
-    functions, examples and tests in the same unique file. Everything can be set from
-    the Rmarkdown template file provided in your project, then inflated as a package.
-    Inflating the template copies the relevant chunks and sections in the appropriate
-    files required for package development.
+  summary: Use Rmarkdown First method to build your package. Start your package with documentation, functions, examples and tests in the same unique file. Everything can be set from the Rmarkdown template file provided in your project, then inflated as a package. Inflating the template copies the relevant chunks and sections
+    in the appropriate files required for package development.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
