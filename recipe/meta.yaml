@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fusen_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fusen/fusen_{{ version }}.tar.gz
-  sha256: 14cafd634dbc6cd31b096c82e197e9263c3c0c0ee4ea19205af9c8722f185b5a
+  sha256: 02112084d6c1bd119051ebe0d931f0d2fc803806a218fd9ae7eaeb082b25ce19
 
 build:
   number: 0
