@@ -32,6 +32,7 @@ requirements:
     - r-here >=1.0.0
     - r-lightparser
     - r-magrittr
+    - r-pkgload
     - r-roxygen2
     - r-stringi
     - r-tibble
@@ -48,6 +49,7 @@ requirements:
     - r-here >=1.0.0
     - r-lightparser
     - r-magrittr
+    - r-pkgload
     - r-roxygen2
     - r-stringi
     - r-tibble
